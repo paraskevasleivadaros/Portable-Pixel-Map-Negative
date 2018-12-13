@@ -63,8 +63,7 @@ int main(int argc, char *argv[]) {
 
 		if (imgObj->load(filename, "ppm")) {
 
-			std::cout << "Image dimensions are: " << imgObj->getWidth() << " X " << imgObj->getHeight() << std::endl;
-			std::cout << "\n";
+			std::cout << "Image dimensions are: " << imgObj->getWidth() << " X " << imgObj->getHeight() << "\n\n";
 
 			unsigned int i, j, w, h;
 
@@ -88,19 +87,19 @@ int main(int argc, char *argv[]) {
 
 			if (!imgObj->save(newfilename, "ppm")) {
 
-				std::cerr << "Error: Negative of Input Image Failed Saving\n";
+				std::cerr << "Error: Saving of Negative of Input Image Failed\n\n";
 			}
 
 		}
 		else {
 
-			std::cerr << "Error: Negative of Input Image Failed Loading\n";
+			std::cerr << "Error: Loading of Negative of Input Image Failed\n\n";
 		}
 
 		imgObj->~Image();//Destroys the pointer of image object
 	} else {
 
-		std::cerr << "Error: We only take input of type \"neg <filename>\"" << std::endl;
+		std::cerr << "Error: Only input of type \"neg <filename>\" is accepted" << "\n\n";
 	}
 
 	system("PAUSE");

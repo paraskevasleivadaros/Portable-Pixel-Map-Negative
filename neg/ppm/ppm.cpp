@@ -11,7 +11,7 @@ namespace imaging {
 
 		//checking if the file's opened correctly
 		if (!iFile.is_open()) {
-			std::cerr << "Error: Opening File Failed" << std::endl;
+			std::cerr << "Error: Opening of File Failed\n\n";
 			return nullptr;
 		}
 
@@ -23,13 +23,13 @@ namespace imaging {
 
 		//checking if format, width and height are correct
 		if (formatOfImage != "P6") {
-			std::cerr << "Error: Format Is Not P6" << std::endl;
+			std::cerr << "Error: Format Is Not P6\n\n";
 			iFile.close();
 			return nullptr;
 		}
 
 		if (width == NULL || height == NULL) {
-			std::cerr << "Error: Width Or Height Missing" << std::endl;
+			std::cerr << "Error: Width Or Height Missing\n\n";
 			iFile.close();
 			return nullptr;
 		}
@@ -39,7 +39,7 @@ namespace imaging {
 		*h = height;
 
 		if (max > 255 || max != 255) {
-			std::cerr << "Error: Maximum Range Of Colors Is Greater Than Or Not Equal To 255" << std::endl;
+			std::cerr << "Error: Maximum Range Of Colors Is Greater Than Or Not Equal To 255\n\n";
 			iFile.close();
 			return nullptr;
 		}
@@ -72,7 +72,7 @@ namespace imaging {
 		
 		//checking if the file's opened correctly
 		if (!oFile.is_open()) {
-		std::cerr << "Error: Opening File Failed" << std::endl;
+		std::cerr << "Error: Opening File Failed\n\n";
 			return false;
 		}
 
