@@ -4,20 +4,17 @@
 #include <iostream>
 #include <string>
 #include "Image.h"
-
-#define B2S(b) ((b) ? "true" : "false")
-//#define printBoolValue(x) {std::cout << "[Variable '" << #x << "' is " << B2S(x) << "]\n\n";}
-//#define printBoolValueAndAddress(x) {std::cout << "[Variable '" << #x << "' is " << B2S(x) << " and it's stored at " << &x << "]\n\n";}
+#include "Debugging.h"
 
 using namespace imaging;
 
 int main(int argc, char *argv[]) {
 	
 	std::string filename;
-	bool *flag;
+	bool* flag = NULL;
 	
-	#ifdef printBoolValue
-		printBoolValue(flag)
+	#ifdef printVal
+		printVal(flag)
 	#endif	
 	
 	if (argc == 2) { //the name of the file is not provided as an arguement
@@ -25,8 +22,8 @@ int main(int argc, char *argv[]) {
 		std::string arg1(argv[1]);
 		flag = (bool*) (arg1 == "neg");
 		
-		#ifdef printBoolValueAndAddress
-			printBoolValueAndAddress(flag)
+		#ifdef printValAndAddr
+			printValAndAddr(flag)
 		#endif	
 		
 		if (flag) {
@@ -40,8 +37,8 @@ int main(int argc, char *argv[]) {
 		std::string arg1(argv[1]);
 		flag = (bool *) (arg1 == "neg");
 		
-		#ifdef printBoolValueAndAddress
-			printBoolValueAndAddress(flag)
+		#ifdef printValAndAddr
+			printValAndAddr(flag)
 		#endif	
 		
 		if (flag) {
@@ -53,8 +50,8 @@ int main(int argc, char *argv[]) {
 		flag = false;
 	}
 	
-	#ifdef printBoolValueAndAddress
-		printBoolValueAndAddress(flag)
+	#ifdef printValAndAddr
+		printValAndAddr(flag)
 	#endif	
 	
 	if (flag) {
