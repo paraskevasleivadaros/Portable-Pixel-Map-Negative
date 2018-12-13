@@ -5,6 +5,10 @@
 #include <string>
 #include "Image.h"
 
+#define B2S(b) ((b) ? "true" : "false")
+//#define printBoolValue(x) {std::cout << "[Variable '" << #x << "' is " << B2S(x) << "]\n\n";}
+//#define printBoolValueAndAddress(x) {std::cout << "[Variable '" << #x << "' is " << B2S(x) << " and it's stored at " << &x << "]\n\n";}
+
 using namespace imaging;
 
 int main(int argc, char *argv[]) {
@@ -12,10 +16,18 @@ int main(int argc, char *argv[]) {
 	std::string filename;
 	bool *flag;
 	
+	#ifdef printBoolValue
+		printBoolValue(flag)
+	#endif	
+	
 	if (argc == 2) { //the name of the file is not provided as an arguement
 		
 		std::string arg1(argv[1]);
 		flag = (bool*) (arg1 == "neg");
+		
+		#ifdef printBoolValueAndAddress
+			printBoolValueAndAddress(flag)
+		#endif	
 		
 		if (flag) {
 			std::cout << "File name of the image to load: ";
@@ -27,7 +39,11 @@ int main(int argc, char *argv[]) {
 		
 		std::string arg1(argv[1]);
 		flag = (bool *) (arg1 == "neg");
-	
+		
+		#ifdef printBoolValueAndAddress
+			printBoolValueAndAddress(flag)
+		#endif	
+		
 		if (flag) {
 			filename = argv[2];
 		}
@@ -36,6 +52,10 @@ int main(int argc, char *argv[]) {
 		
 		flag = false;
 	}
+	
+	#ifdef printBoolValueAndAddress
+		printBoolValueAndAddress(flag)
+	#endif	
 	
 	if (flag) {
 		Image *imgObj = new Image;
