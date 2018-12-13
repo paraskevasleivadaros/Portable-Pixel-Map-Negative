@@ -13,8 +13,8 @@ int main(int argc, char *argv[]) {
 	std::string filename;
 	bool* flag = NULL;
 	
-	#ifdef printVal
-		printVal(flag)
+	#ifdef PrintValInfo
+		PrintValInfo(flag)
 	#endif	
 	
 	if (argc == 2) { //the name of the file is not provided as an arguement
@@ -22,8 +22,8 @@ int main(int argc, char *argv[]) {
 		std::string arg1(argv[1]);
 		flag = (bool*) (arg1 == "neg");
 		
-		#ifdef printValAndAddr
-			printValAndAddr(flag)
+		#ifdef PrintValInfo
+			PrintValInfo(flag)
 		#endif	
 		
 		if (flag) {
@@ -37,8 +37,8 @@ int main(int argc, char *argv[]) {
 		std::string arg1(argv[1]);
 		flag = (bool *) (arg1 == "neg");
 		
-		#ifdef printValAndAddr
-			printValAndAddr(flag)
+		#ifdef PrintValInfo
+			PrintValInfo(flag)
 		#endif	
 		
 		if (flag) {
@@ -50,12 +50,16 @@ int main(int argc, char *argv[]) {
 		flag = false;
 	}
 	
-	#ifdef printValAndAddr
-		printValAndAddr(flag)
+	#ifdef PrintValInfo
+		PrintValInfo(flag)
 	#endif	
 	
 	if (flag) {
 		Image *imgObj = new Image;
+	
+		#ifdef PrintPtrInfo
+			PrintPtrInfo(imgObj)
+		#endif	
 
 		if (imgObj->load(filename, "ppm")) {
 
