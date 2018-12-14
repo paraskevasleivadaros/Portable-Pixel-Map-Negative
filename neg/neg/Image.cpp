@@ -82,7 +82,6 @@ namespace imaging {
 	
 	Image::Image(unsigned int width, unsigned int height, const Color * data_ptr){
 		
-		buffer = new Color[width * height];
 		setData(data_ptr);
 		this->width = width;
 		this->height = height;		
@@ -92,7 +91,6 @@ namespace imaging {
 	Image::Image(const Image &src) {
 		
 		const Color * data_ptr = src.buffer;
-		buffer = new Color[width * height];
 		setData(data_ptr);
 		this->width = src.width;
 		this->height = src.height;
@@ -106,9 +104,10 @@ namespace imaging {
 	Image & Image::operator = (const Image & right){
 		
 		this->width = right.width;
-		this->height= right.height;
-		this->buffer = right.buffer;
-		return *this;//returns the object created inside here
+		this->height = right.height;
+		const Color * data_ptr = right.buffer;
+		setData(data_ptr);
+		return *this; //returns the object created inside here
 	}
 
 	//Loads the image data from the specified file, if the extension of the filename matches the format string
@@ -169,7 +168,7 @@ namespace imaging {
 			f_buffer[i*3+2] = buffer[i].b;
 		}
 
-		return WritePPM(f_buffer, width, height,filename.c_str());
+		return WritePPM(f_buffer, width, height, filename.c_str());
 	}
 
 	//Checks if format="ppm"
