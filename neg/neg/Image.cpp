@@ -101,6 +101,9 @@ namespace imaging {
 
 	Image & Image::operator = (const Image & right){
 		
+		if (&right == this)	return *this;
+		if (this->buffer != nullptr) delete[] buffer;
+
 		const Color * data_ptr = right.buffer;
 		setData(data_ptr);
 		this->width = right.width;
