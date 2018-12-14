@@ -101,10 +101,10 @@ namespace imaging {
 
 	Image & Image::operator = (const Image & right){
 		
-		this->width = right.width;
-		this->height = right.height;
 		const Color * data_ptr = right.buffer;
 		setData(data_ptr);
+		this->width = right.width;
+		this->height = right.height;		
 		return *this; //returns the object created inside here
 	}
 
