@@ -47,7 +47,7 @@ namespace imaging {
 		//reading the rest of the file
 		unsigned int sizeOfBuffer = height * width * 3; //finding out how much space our buffer will take up
 		unsigned char * buffer = new unsigned char[sizeOfBuffer]; //array that we'll use later to convert our data to floats
-		iFile.get();//skips blanks after header
+		iFile.get(); //skips blanks after header
 		iFile.read((char *)buffer, sizeOfBuffer); //initializing array buffer with data from our file
 
 		float *f_buffer = new float[sizeOfBuffer]; //array containing float values
@@ -72,7 +72,7 @@ namespace imaging {
 		
 		//checking if the file's opened correctly
 		if (!oFile.is_open()) {
-		std::cerr << "Error: Opening File Failed\n\n";
+			std::cerr << "Error: Opening File Failed\n\n";
 			return false;
 		}
 
@@ -92,12 +92,12 @@ namespace imaging {
 			buffer[i] = (unsigned char) (data[i] * 255.0F);
 		}
 
-		oFile.write((char *)buffer, sizeOfBuffer);//writes the buffer inside the image,after the header
+		oFile.write((char *)buffer, sizeOfBuffer); //writes the buffer inside the image,after the header
 		
 		oFile.flush();
-		oFile.close();//closing ofstream "oFile"
+		oFile.close(); //closing ofstream "oFile"
 
-		delete[] buffer;//deleting array "buffer" since it takes up useless space
+		delete[] buffer; //deleting array "buffer" since it takes up useless space
 
 		return true;
 	}

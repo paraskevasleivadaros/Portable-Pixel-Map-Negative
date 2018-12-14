@@ -39,9 +39,7 @@ namespace imaging {
 	//sets the color of the image at location (x, y)
 	void Image::setPixel(unsigned int x, unsigned int y, Color & value) {
 		
-		if ((x > height - 1) || (y > width - 1)) {
-			return;
-		}
+		if ((x > height - 1) || (y > width - 1)) return;
 		
 		unsigned int pixel = (x * width + y);//location of pixel inside array "buffer"
 
@@ -116,9 +114,7 @@ namespace imaging {
 		std::string filenameNotConst = filename;
 		if (!isPPM(filenameNotConst)) return false;
 
-		if (format != "ppm") {
-			return false;
-		}
+		if (format != "ppm") return false;
 
 		int w, h;
 		float *f_buffer;
@@ -152,9 +148,7 @@ namespace imaging {
 		std::string filenameNotConst = filename;
 		if (!isPPM(filenameNotConst)) return false;
 		
-		if (format != "ppm") {
-			return false;
-		}
+		if (format != "ppm") return false;
 
 		float *f_buffer = new float[width * height * 3];
 
@@ -173,7 +167,6 @@ namespace imaging {
 
 	//Checks if format="ppm"
 	bool isPPM(std::string& filename) {
-
 		return (areEqual(filename.substr(filename.find_last_of(".") + 1), "ppm") ? true : false);
 	}
 
