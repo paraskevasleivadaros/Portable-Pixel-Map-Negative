@@ -21,32 +21,33 @@ Press Enter and type the filename of the image you want to load, e.x.:
 
 Press Enter, That&#39;s it!
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Using Command Prompt](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Using%20Command%20Prompt.png)
 
 # Using Visual Studio
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
 Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\PPM-AUEB-master\neg
 
+![Open the project](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Open%20the%20project.png)
+
 Open neg.sln
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Open neg.sln](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Open%20neg.sln.png)
 
-Right Click on neg project and choose Properties
+Right click on project "neg" and choose Properties
+
+![Right click on project 'neg' and choose Properties](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Right%20click%20on%20project%20'neg'%20and%20choose%20Properties.png)
 
 Navigate to General>Debugging and type neg inside &quot;Command Arguments&quot;
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Add Command Arguments](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Add%20Command%20Arguments.png)
 
 Click on Local Windows Debugger
 
 A command window will open up
 
 Type the filename of the image you want to load, e.g.: Image01.ppm
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
+![Type the filename of the image you want to load](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Type%20the%20filename%20of%20the%20image%20you%20want%20to%20load.png)
 
 Press Enter
 
