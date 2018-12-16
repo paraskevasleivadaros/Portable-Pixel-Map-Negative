@@ -11,7 +11,7 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 
 Open a terminal and type
 
-        cd C:\Users\USER\Downloads\PPM-AUEB-master\neg\Release
+        cd C:\Users\USER\Downloads\Portable-Pixel-Map-Filters-master\neg\Release
 
 Press Enter and type
 
@@ -29,7 +29,7 @@ You can see the results using Viewer.exe that is included inside this repo
 
 ## Using Visual Studio
 
-Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\PPM-AUEB-master\neg
+Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\Portable-Pixel-Map-Filters-master\neg
 
 ![Open the project](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Open%20the%20project.png)
 
