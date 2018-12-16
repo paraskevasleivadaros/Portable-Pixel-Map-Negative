@@ -1,6 +1,9 @@
 # Portable Pixel Map | Filters
 Project for the course "Προγραμματισμός Υπολογιστών με C++" of AUEB
 
+ΛΕΙΒΑΔΑΡΟΣ ΠΑΡΑΣΚΕΥΑΣ 3150090
+ΚΟΥΛΟΥΡΗΣ ΓΙΩΡΓΟΣ 3150080
+
 1. Download all the files using &quot;Download Zip&quot; prompt
 2. Go to your Downloads folder, right click on the zip and choose &quot;Extract Here&quot;
 3. After all the files have been extracted there are two ways you can run the program
