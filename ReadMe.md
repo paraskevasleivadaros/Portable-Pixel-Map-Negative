@@ -5,6 +5,8 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 2. Go to your Downloads folder, right click on the zip and choose &quot;Extract Here&quot;
 3. After all the files have been extracted there are two ways you can run the program
 
+* * *
+
 ## Using Command Prompt:
 
 Open a terminal and type
@@ -59,4 +61,4 @@ Press Enter, that&#39;s it!
 
 * * *
 
-You can see the results using Viewer.exe
+You can see the results using Viewer.exe that is included inside this repo!
