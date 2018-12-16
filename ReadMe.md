@@ -7,19 +7,19 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 
 ## Using Command Prompt:
 
-Open a terminal and type:
+Open a terminal and type
 
         cd C:\Users\USER\Downloads\PPM-AUEB-master\neg\Release
 
-Press Enter and then type
+Press Enter and type
 
         neg.exe neg
 
-Press Enter and type the filename of the image you want to load, e.x.:
+Press Enter and type the filename of the image you want to load, e.g.:
 
         Image01.ppm
 
-Press Enter, That&#39;s it!
+Press Enter, that&#39;s it!
 
 ![Using Command Prompt](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Using%20Command%20Prompt.png)
 
@@ -43,12 +43,14 @@ Navigate to General>Debugging and type neg inside &quot;Command Arguments&quot;
 
 Click on Local Windows Debugger
 
+![Click on Local Windows Debugger](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Click%20on%20Local%20Windows%20Debugger.png)
+
 A command window will open up
 
-Type the filename of the image you want to load, e.g.: Image01.ppm
+Type the filename of the image you want to load, e.g.: 
+               
+        Image01.ppm
 
 ![Type the filename of the image you want to load](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Type%20the%20filename%20of%20the%20image%20you%20want%20to%20load.png)
 
-Press Enter
-
-That&#39;s it!
+Press Enter, that&#39;s it!
