@@ -1,9 +1,6 @@
 # Portable Pixel Map | Filters
 Project for the course "Προγραμματισμός Υπολογιστών με C++" of AUEB
 
-Λειβαδάρος Παρασκευάς (3150090) <br>
-Κουλούρης Γιώργος (3150080)
-
 1. Download all the files using &quot;Download Zip&quot; prompt
 2. Go to your Downloads folder, right click on the zip and choose &quot;Extract Here&quot;
 3. After all the files have been extracted there are two ways you can run the program
@@ -25,6 +22,8 @@ Press Enter and type the filename of the image you want to load, e.g.:
         Image01.ppm
 
 Press Enter, that&#39;s it!
+
+You can see the results using Viewer.exe that is included inside this repo
 
 ![Using Command Prompt](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Using%20Command%20Prompt.png)
 
@@ -62,6 +61,8 @@ Press Enter
 
 Press Enter, that&#39;s it!
 
+You can see the results using Viewer.exe that is included inside this repo
+
 * * *
 
-You can see the results using Viewer.exe that is included inside this repo!
+Δημιουργήθηκε από τους Λειβαδάρος Παρασκευάς (3150090) & Κουλούρης Γιώργος (3150080)
