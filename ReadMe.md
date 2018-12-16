@@ -51,6 +51,12 @@ Type the filename of the image you want to load, e.g.:
                
         Image01.ppm
 
+Press Enter
+
 ![Type the filename of the image you want to load](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Type%20the%20filename%20of%20the%20image%20you%20want%20to%20load.png)
 
 Press Enter, that&#39;s it!
+
+* * *
+
+You can see the results using Viewer.exe
