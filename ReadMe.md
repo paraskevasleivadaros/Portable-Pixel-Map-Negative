@@ -5,7 +5,7 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 2. Go to your Downloads folder, right click on the zip and choose &quot;Extract Here&quot;
 3. After all the files have been extracted there are two ways you can run the program
 
-# Using Command Prompt:
+## Using Command Prompt:
 
 Open a terminal and type:
 
@@ -23,7 +23,7 @@ Press Enter, That&#39;s it!
 
 ![Using Command Prompt](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/Screenshots%20used%20for%20instructions/Using%20Command%20Prompt.png)
 
-# Using Visual Studio
+## Using Visual Studio
 
 Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\PPM-AUEB-master\neg
 
