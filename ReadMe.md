@@ -23,7 +23,7 @@ Press Enter and type the filename of the image you want to load, e.g.:
 
 Press Enter, that&#39;s it!
 
-You can see the results using Viewer.exe that is included inside this repo
+You can check the result with the preview software included inside this repo or with any other program that recognizes the PPM format.
 
 ![Using Command Prompt](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Filters/blob/master/screenshots/Using%20Command%20Prompt.png)
 
@@ -61,7 +61,7 @@ Press Enter
 
 Press Enter, that&#39;s it!
 
-You can see the results using Viewer.exe that is included inside this repo
+You can check the result with the preview software included inside this repo or with any other program that recognizes the PPM format
 
 * * *
 
