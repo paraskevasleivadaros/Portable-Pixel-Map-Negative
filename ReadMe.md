@@ -1,4 +1,4 @@
-# Portable Pixel Map | Filters
+# Portable Pixel Map | Negative
 Project for the course "Προγραμματισμός Υπολογιστών με C++" of AUEB
 
 1. Download all the files using &quot;Download Zip&quot; prompt
