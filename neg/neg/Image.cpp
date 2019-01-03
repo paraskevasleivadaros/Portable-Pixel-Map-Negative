@@ -86,9 +86,7 @@ namespace imaging {
 	}
 
 	//destructor
-	Image::~Image() {
-		delete[] buffer;
-	}
+	Image::~Image() { delete[] buffer; }
 
 	Image & Image::operator = (const Image & right){
 		
@@ -99,7 +97,7 @@ namespace imaging {
 		setData(data_ptr);
 		this->width = right.width;
 		this->height = right.height;		
-		return *this; //returns the object created inside here
+		return *this;
 	}
 
 	//Loads the image data from the specified file, if the extension of the filename matches the format string
@@ -112,8 +110,9 @@ namespace imaging {
 
 		int w, h;
 		float *f_buffer;
-
-		f_buffer = ReadPPM(filename.c_str(), &w, &h);//read image data and pass into f_buffer
+		
+		//read image data and pass into f_buffer
+		f_buffer = ReadPPM(filename.c_str(), &w, &h);
 
 		if (f_buffer == nullptr) return false;
 
@@ -129,7 +128,7 @@ namespace imaging {
 			buffer[i].b = f_buffer[i * 3 + 2];
 		}
 
-		delete[] f_buffer;//deleting array "f_buffer" since it takes up useless space
+		delete[] f_buffer; //deleting array "f_buffer" since it takes up useless space
 
 		return true;
 	}
