@@ -64,12 +64,7 @@ namespace imaging {
 	}
 	
 	//Default constructor
-	Image::Image() {
-
-		buffer = nullptr;
-		width = 0;
-		height = 0;
-	}
+	Image::Image() : buffer(nullptr), width(0), height(0) {}
 
 	Image::Image(unsigned int width, unsigned int height) {
 		
@@ -78,20 +73,16 @@ namespace imaging {
 		this->height = height;
 	}
 	
-	Image::Image(unsigned int width, unsigned int height, const Color * data_ptr){
+	Image::Image(unsigned int width, unsigned int height, const Color * data_ptr) : width(width), height(height) {
 		
-		setData(data_ptr);
-		this->width = width;
-		this->height = height;		
+		setData(data_ptr);	
 	}
 	
 	//Copy constructor
-	Image::Image(const Image &src) {
+	Image::Image(const Image &src) : width(src.width), height(src.height) {
 		
 		const Color * data_ptr = src.buffer;
 		setData(data_ptr);
-		this->width = src.width;
-		this->height = src.height;
 	}
 
 	//destructor
@@ -101,7 +92,7 @@ namespace imaging {
 
 	Image & Image::operator = (const Image & right){
 		
-		if (&right == this)	return *this;
+		if (&right == this) return *this;
 		if (this->buffer != nullptr) delete[] buffer;
 
 		const Color * data_ptr = right.buffer;
@@ -124,9 +115,7 @@ namespace imaging {
 
 		f_buffer = ReadPPM(filename.c_str(), &w, &h);//read image data and pass into f_buffer
 
-		if (f_buffer == nullptr) {
-			return false;
-		}
+		if (f_buffer == nullptr) return false;
 
 		width = w;
 		height = h;
@@ -164,14 +153,14 @@ namespace imaging {
 			f_buffer[i*3+1] = buffer[i].g;
 			f_buffer[i*3+2] = buffer[i].b;
 		}
-
-		return WritePPM(f_buffer, width, height, filename.c_str());
+		
+		bool complete = return WritePPM(f_buffer, width, height, filename.c_str());
+		delete[] f_buffer;	
+		return complete;
 	}
 
 	//Checks if format="ppm"
-	bool isPPM(std::string& filename) {
-		return (areEqual(filename.substr(filename.find_last_of(".") + 1), "ppm") ? true : false);
-	}
+	bool isPPM(std::string& filename) { return (areEqual(filename.substr(filename.find_last_of(".") + 1), "ppm") ? true : false); }
 
 	//checks if 2 strings are equal
 	bool areEqual(const std::string& a, const std::string& b) {
@@ -179,9 +168,7 @@ namespace imaging {
 		if (b.size() != a.size()) return false;
 
 		for (unsigned int i = 0; i < a.size(); ++i) {
-			if (tolower(a[i]) != tolower(b[i])) {
-				return false;
-			}
+			if (tolower(a[i]) != tolower(b[i])) return false;
 		}
 
 		return true;
