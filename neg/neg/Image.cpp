@@ -127,8 +127,7 @@ namespace imaging {
 			buffer[i].b = f_buffer[i * 3 + 2];
 		}
 
-		delete[] f_buffer; //deleting array "f_buffer" since it takes up useless space
-
+		delete[] f_buffer; // freeing memory
 		return true;
 	}
 
@@ -142,10 +141,7 @@ namespace imaging {
 
 		float *f_buffer = new float[width * height * 3];
 
-		int w = width;
-		int h = height;
-
-		for (int i = 0; i < w * h; i++) {
+		for (unsigned int i = 0; i < width * height; i++) {
 			
 			f_buffer[i*3] = buffer[i].r;
 			f_buffer[i*3+1] = buffer[i].g;
@@ -153,7 +149,7 @@ namespace imaging {
 		}
 		
 		bool complete = return WritePPM(f_buffer, width, height, filename.c_str());
-		delete[] f_buffer;	
+		delete[] f_buffer; // freeing memory	
 		return complete;
 	}
 
@@ -165,9 +161,8 @@ namespace imaging {
 
 		if (b.size() != a.size()) return false;
 
-		for (unsigned int i = 0; i < a.size(); ++i) {
+		for (unsigned int i = 0; i < a.size(); ++i)
 			if (tolower(a[i]) != tolower(b[i])) return false;
-		}
 
 		return true;
 	}
