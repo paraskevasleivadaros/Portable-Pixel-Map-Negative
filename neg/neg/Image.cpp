@@ -1,7 +1,6 @@
 #include "Image.h"
 #include "../ppm/ppm.h"
 #include <ostream>
-#include <string>
 
 namespace imaging {
 
