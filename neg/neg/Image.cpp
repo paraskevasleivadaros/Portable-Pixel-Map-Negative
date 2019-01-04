@@ -159,7 +159,7 @@ namespace imaging {
 	}
 
 	//Checks if format="ppm"
-	bool isPPM(std::string& filename) { return (areEqual(filename.substr(filename.find_last_of(".") + 1), "ppm") ? true : false); }
+	bool isPPM(std::string& filename) { return (areEqual(filename.substr(filename.find_last_of(".") + 1), "ppm")); }
 
 	//checks if 2 strings are equal
 	bool areEqual(const std::string& a, const std::string& b) {
