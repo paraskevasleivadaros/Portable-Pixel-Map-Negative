@@ -2,7 +2,6 @@
 //KOYLOYRIS GEORGIOS 3150080
 
 #include <iostream>
-#include <string>
 #include "Image.h"
 //#include "Debugging.h"
 
