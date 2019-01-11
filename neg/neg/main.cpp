@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "Image.h"
-//#include "Debugging.h"
+#include "Debugging.h"
 
 using namespace imaging;
 
