@@ -84,10 +84,7 @@ int main(int argc, char *argv[]) {
 			std::string newfilename = filename.substr(0, filename.length() - 4);
 			newfilename.append("_neg.ppm");
 
-			if (!imgObj->save(newfilename, "ppm")) {
-
-				std::cerr << "Error: Saving of Negative of Input Image Failed\n\n";
-			}
+			if (!imgObj->save(newfilename, "ppm")) { std::cerr << "Error: Saving of Negative of Input Image Failed\n\n"; }
 
 		}
 		else {
@@ -102,7 +99,6 @@ int main(int argc, char *argv[]) {
 	}
 
 	system("PAUSE");
-
 	return 0;
 
 } 
