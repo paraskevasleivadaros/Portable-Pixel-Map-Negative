@@ -11,7 +11,7 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 
 Open a terminal and type
 
-        cd C:\Users\USER\Downloads\Portable-Pixel-Map-Filters-master\neg\Release
+        cd C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg\Release
 
 Press Enter and type
 
@@ -29,7 +29,7 @@ You can check the result with the preview software included inside this repo or 
 
 ## Using Visual Studio
 
-Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\Portable-Pixel-Map-Filters-master\neg
+Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg
 
 ![Open the project](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Open%20the%20project.png)
 
