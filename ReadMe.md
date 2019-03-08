@@ -49,8 +49,8 @@ Click on Local Windows Debugger
 
 ![Click on Local Windows Debugger](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Click%20on%20Local%20Windows%20Debugger.png)
 
-A command window will open up
-You could either drag & drop the image from the folder to the command promt or you could type the filename of the image you want to load as shown below, e.g.: 
+A command prompt window will open up
+You could either drag & drop the image from the folder to the command prompt or you could type the filename of the image you want to load as shown below, e.g.: 
                
         Image01.ppm
 
