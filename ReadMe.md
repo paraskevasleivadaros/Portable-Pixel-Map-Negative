@@ -37,11 +37,11 @@ Open neg.sln
 
 ![Open neg.sln](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Open%20neg.sln.png)
 
-Right click on project "neg" and choose Properties
+Right click on project &quot;neg&quot; and choose Properties
 
 ![Right click on project 'neg' and choose Properties](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Right%20click%20on%20project%20'neg'%20and%20choose%20Properties.png)
 
-Navigate to General>Debugging and type neg inside &quot;Command Arguments&quot;
+Navigate to General>Debugging and type "neg" inside &quot;Command Arguments&quot;
 
 ![Add Command Arguments](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Add%20Command%20Arguments.png)
 
