@@ -61,3 +61,5 @@ Press Enter
 Press Enter, that&#39;s it!
 
 You can check the result with the preview software included inside this repo or with any other program that recognizes the PPM format
+
+[MIT](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/LICENSE)
