@@ -1,8 +1,8 @@
 # Portable Pixel Map | Negative
 Project for the course "Προγραμματισμός Υπολογιστών με C++" of AUEB
 
-1. Download all the files using &quot;Download Zip&quot; prompt
-2. Go to your Downloads folder, right click on the zip and choose &quot;Extract Here&quot;
+1. Download all the files using "Download Zip" prompt
+2. Go to your Downloads folder, right click on the zip and choose "Extract Here"
 3. After all the files have been extracted there are two ways you can run the program
 
 * * *
@@ -10,18 +10,18 @@ Project for the course "Προγραμματισμός Υπολογιστών μ
 ## Using Command Prompt:
 
 Open a terminal and type
-
-        cd C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg\Release
-
+```shell
+cd C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg\Release
+```
 Press Enter and type
-
-        neg.exe neg
-
+```shell
+neg.exe neg
+```
 Press Enter and you could either drag & drop the image from the folder to the command prompt window or you could type the filename of the image you want to load as shown below, e.g.:
-
-        Image01.ppm
-
-Press Enter, that&#39;s it!
+```shell
+Image01.ppm
+```
+Press Enter, that's it!
 
 You can check the result with the preview software included inside this repo or with any other program that recognizes the PPM format.
 
@@ -29,7 +29,7 @@ You can check the result with the preview software included inside this repo or 
 
 ## Using Visual Studio
 
-Click on File>Open>Project/Solution and navigate to C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg
+Click on File > Open > Project/Solution and navigate to C:\Users\USER\Downloads\Portable-Pixel-Map-Negative-master\neg
 
 ![Open the project](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Open%20the%20project.png)
 
@@ -51,14 +51,14 @@ Click on Local Windows Debugger
 
 A command prompt window will open up
 You could either drag & drop the image from the folder to the command prompt window or you could type the filename of the image you want to load as shown below, e.g.: 
-               
-        Image01.ppm
-
+```shell
+Image01.ppm
+```
 Press Enter
 
 ![Type the filename of the image you want to load](https://github.com/paraskevasleivadaros/Portable-Pixel-Map-Negative/blob/master/screenshots/Type%20the%20filename%20of%20the%20image%20you%20want%20to%20load.png)
 
-Press Enter, that&#39;s it!
+Press Enter, that's it!
 
 You can check the result with the preview software included inside this repo or with any other program that recognizes the PPM format
 
